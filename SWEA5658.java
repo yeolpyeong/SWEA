@@ -41,7 +41,7 @@ public class SWEA5658 {
 			K = set.size() - K;
 			for (int s : set) {
 				if (K-- == 0) {
-					System.out.printf("#%d %d\n", t, s);
+					System.out.printf("#%d %d \n", t, s);
 				}
 			}
 		}
