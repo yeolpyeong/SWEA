@@ -1,1 +1,1 @@
-# https://www.swexpertacademy.com/main/main.do
+https://www.swexpertacademy.com/main/main.do
