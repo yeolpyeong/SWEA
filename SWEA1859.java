@@ -1,7 +1,7 @@
 
 /*
  * 백만 장자 프로젝트
- * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LrsUaDxcDFAXc&categoryId=AV5LrsUaDxcDFAXc&categoryType=CODE
+ * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LrsUaDxcDFAXc
  */
 
 import java.util.Scanner;
