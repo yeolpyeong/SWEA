@@ -1,7 +1,7 @@
 
 /*
  * 최빈수 구하기
- * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV13zo1KAAACFAYh&categoryId=AV13zo1KAAACFAYh&categoryType=CODE
+ * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV13zo1KAAACFAYh
  */
 
 import java.io.BufferedReader;
