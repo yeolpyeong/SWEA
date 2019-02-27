@@ -1,6 +1,6 @@
 
 /*
- * ¹Ì·Î2
+ * ë¯¸ë¡œ2
  * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14wL9KAGkCFAYD
  */
 
