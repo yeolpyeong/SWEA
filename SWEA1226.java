@@ -1,7 +1,7 @@
 
 /*
  * 미로1
- * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14vXUqAGMCFAYD&categoryId=AV14vXUqAGMCFAYD&categoryType=CODE&&&
+ * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14vXUqAGMCFAYD
  */
 
 import java.io.BufferedReader;
