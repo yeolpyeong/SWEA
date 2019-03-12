@@ -5,7 +5,6 @@
  */
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Set;
 import java.util.StringTokenizer;
@@ -14,7 +13,7 @@ import java.util.TreeSet;
 public class SWEA5658 {
 	static char[] numbers;
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine());
 		for (int t = 1; t <= T; t++) {
