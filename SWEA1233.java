@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
 public class SWEA1233 {
 	static final String operator = "+-*/";
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		for (int t = 1; t <= 10; t++) {
 			int N = Integer.parseInt(br.readLine());
