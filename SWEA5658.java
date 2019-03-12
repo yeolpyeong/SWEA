@@ -1,7 +1,7 @@
 
 /*
  * 보물상자 비밀번호
- * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRUN9KfZ8DFAUo&
+ * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRUN9KfZ8DFAUo
  */
 
 import java.io.BufferedReader;
