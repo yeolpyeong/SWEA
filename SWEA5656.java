@@ -64,7 +64,7 @@ public class SWEA5656 {
 		}
 	}
 
-	static void restore(int[][] map) {
+	static void moveDown(int[][] map) {
 		int step;
 		for (int j = W - 1; j >= 0; j--) {
 			step = 0;
@@ -89,7 +89,7 @@ public class SWEA5656 {
 			for (int i = 0; i < H; i++) {
 				if (copy[i][j] > 0) {
 					crush(copy, i, j);
-					restore(copy);
+					moveDown(copy);
 					break;
 				}
 			}
