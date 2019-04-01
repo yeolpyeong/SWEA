@@ -1,6 +1,6 @@
 
 /*
- * Ż�ֹ� �˰�
+ * 탈주범 검거
  * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PpLlKAQ4DFAUq
  */
 
