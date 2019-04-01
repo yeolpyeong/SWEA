@@ -17,10 +17,6 @@ class SWEA1949 {
 	static boolean[][] visited;
 
 	static void dfs(int cr, int cc, int ch, int len, boolean flag) {
-		if (len > maxLen) {
-			maxLen = len;
-		}
-		
 		for (int d = 0; d < 4; d++) {
 			int nr = cr + dr[d];
 			int nc = cc + dc[d];
@@ -48,6 +44,10 @@ class SWEA1949 {
 					}
 				}
 			}
+		}
+		
+		if (len > maxLen) {
+			maxLen = len;
 		}
 	}
 
