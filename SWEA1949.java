@@ -17,7 +17,10 @@ class SWEA1949 {
 	static boolean[][] visited;
 
 	static void dfs(int cr, int cc, int ch, int len, boolean flag) {
-		maxLen = Math.max(maxLen, len);
+		if (len > maxLen) {
+			maxLen = len;
+		}
+		
 		for (int d = 0; d < 4; d++) {
 			int nr = cr + dr[d];
 			int nc = cc + dc[d];
