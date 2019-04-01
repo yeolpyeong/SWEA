@@ -1,6 +1,6 @@
 
 /*
- * ÇÁ·Î¼¼¼­ ¿¬°áÇÏ±â
+ * í”„ë¡œì„¸ì„œ ì—°ê²°í•˜ê¸°
  * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4suNtaXFEDFAUf
  */
 
