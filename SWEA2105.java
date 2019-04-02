@@ -57,8 +57,8 @@ class SWEA2105 {
 			}
 
 			max = -1;
-			for (int i = 0; i < N - 2; i++) {
-				for (int j = 1; j < N - 1; j++) {
+			for (int i = 0; i < N; i++) {
+				for (int j = 0; j < N; j++) {
 					dessertType = new boolean[101];
 					dessertType[map[i][j]] = true;
 					startR = i;
