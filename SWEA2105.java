@@ -1,6 +1,6 @@
 
 /*
- * 디저트 카페
+ * 디저트 카페 
  * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5VwAr6APYDFAWu
  */
 
@@ -15,7 +15,7 @@ class SWEA2105 {
 	static int[][] map;
 	static boolean[] dessertType;
 
-	static void go(int step, int cr, int cc, int count) {
+	static void dfs(int step, int cr, int cc, int count) {
 		int nr = cr + dr[step];
 		int nc = cc + dc[step];
 
@@ -35,9 +35,9 @@ class SWEA2105 {
 		}
 
 		dessertType[map[nr][nc]] = true;
-		go(step, nr, nc, count + 1);
+		dfs(step, nr, nc, count + 1);
 		if (step != 3) {
-			go(step + 1, nr, nc, count + 1);
+			dfs(step + 1, nr, nc, count + 1);
 		}
 		dessertType[map[nr][nc]] = false;
 	}
@@ -63,7 +63,7 @@ class SWEA2105 {
 					dessertType[map[i][j]] = true;
 					startR = i;
 					startC = j;
-					go(0, i, j, 1);
+					dfs(0, i, j, 1);
 				}
 			}
 
