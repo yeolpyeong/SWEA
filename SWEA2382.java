@@ -1,6 +1,6 @@
 
 /*
- * 미생물 격리
+ * 미생물 격리 
  * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV597vbqAH0DFAVl
  */
 
@@ -11,15 +11,6 @@ import java.util.StringTokenizer;
 
 class SWEA2382 {
 	static final int[] dr = { 0, -1, 1, 0, 0 }, dc = { 0, 0, 0, -1, 1 };
-
-	static class Pair {
-		int n, d;
-
-		public Pair(int n, int d) {
-			this.n = n;
-			this.d = d;
-		}
-	}
 
 	static class Point implements Comparable<Point> {
 		int r, c, n, d;
@@ -42,7 +33,7 @@ class SWEA2382 {
 	static int move(int M, PriorityQueue<Point> pq) {
 		int count = 0;
 		while (M-- > 0) {
-			Pair[][] map = new Pair[N][N];
+			Point[][] map = new Point[N][N];
 			while (!pq.isEmpty()) {
 				int cr = pq.peek().r;
 				int cc = pq.peek().c;
@@ -63,7 +54,7 @@ class SWEA2382 {
 				}
 
 				if (map[nr][nc] == null) {
-					map[nr][nc] = new Pair(cn, cd);
+					map[nr][nc] = new Point(nr, nc, cn, cd);
 				} else {
 					map[nr][nc].n += cn;
 				}
