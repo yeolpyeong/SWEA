@@ -137,8 +137,7 @@ public class SWEA5656 {
 			}
 
 			max = Integer.MIN_VALUE;
-			Stack<Integer> order = new Stack<>();
-			dfs(order);
+			dfs(new Stack<>());
 
 			System.out.printf("#%d %d \n", t, total - max);
 		}
