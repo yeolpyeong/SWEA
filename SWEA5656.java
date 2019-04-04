@@ -12,32 +12,32 @@ import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class SWEA5656 {
-	static final int[] dx = { 1, -1, 0, 0 }, dy = { 0, 0, 1, -1 };
+	static final int[] dr = { -1, 1, 0, 0 }, dc = { 0, 0, -1, 1 };
 
 	static class Point {
-		int x, y;
+		int r, c;
 
-		public Point(int x, int y) {
-			this.x = x;
-			this.y = y;
+		public Point(int r, int c) {
+			this.r = r;
+			this.c = c;
 		}
 	}
 
 	static int N, W, H, count, max;
 	static int[][] map;
 
-	static void crush(int[][] map, int x, int y) {
+	static void crush(int[][] map, int r, int c) {
 		Queue<Point> q = new LinkedList<>();
 		boolean[][] visited = new boolean[H][W];
-		q.add(new Point(x, y));
-		visited[x][y] = true;
+		q.add(new Point(r, c));
+		visited[r][c] = true;
 		while (!q.isEmpty()) {
-			int cx = q.peek().x;
-			int cy = q.peek().y;
+			int cr = q.peek().r;
+			int cc = q.peek().c;
 			q.poll();
 
-			int power = map[cx][cy];
-			map[cx][cy] = 0;
+			int power = map[cr][cc];
+			map[cr][cc] = 0;
 			count++;
 
 			if (power == 1) {
@@ -46,19 +46,19 @@ public class SWEA5656 {
 
 			for (int d = 0; d < 4; d++) {
 				for (int p = 1; p < power; p++) {
-					int nx = cx + p * dx[d];
-					int ny = cy + p * dy[d];
+					int nr = cr + p * dr[d];
+					int nc = cc + p * dc[d];
 
-					if (nx < 0 || ny < 0 || nx >= H || ny >= W) {
+					if (nr < 0 || nc < 0 || nr >= H || nc >= W) {
 						continue;
 					}
 
-					if (map[nx][ny] == 0 || visited[nx][ny]) {
+					if (map[nr][nc] == 0 || visited[nr][nc]) {
 						continue;
 					}
 
-					q.add(new Point(nx, ny));
-					visited[nx][ny] = true;
+					q.add(new Point(nr, nc));
+					visited[nr][nc] = true;
 				}
 			}
 		}
