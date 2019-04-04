@@ -1,6 +1,6 @@
 
 /*
- * 점심 식사시간
+ * 점심 식사시간 
  * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5-BEE6AK0DFAVl
  */
 
@@ -62,25 +62,25 @@ class SWEA2383 {
 				}
 
 				int minute = 1;
-				LinkedList<Integer> stair0 = new LinkedList<>();
-				LinkedList<Integer> stair1 = new LinkedList<>();
+				LinkedList<Integer> downStair0 = new LinkedList<>();
+				LinkedList<Integer> downStair1 = new LinkedList<>();
 				int qs;
 				while (true) {
 					minute++;
 
-					qs = stair0.size();
+					qs = downStair0.size();
 					while (qs-- > 0) {
-						int time = stair0.poll() - 1;
+						int time = downStair0.poll() - 1;
 						if (time > 0) {
-							stair0.add(time);
+							downStair0.add(time);
 						}
 					}
 
-					qs = stair1.size();
+					qs = downStair1.size();
 					while (qs-- > 0) {
-						int time = stair1.poll() - 1;
+						int time = downStair1.poll() - 1;
 						if (time > 0) {
-							stair1.add(time);
+							downStair1.add(time);
 						}
 					}
 
@@ -89,8 +89,8 @@ class SWEA2383 {
 						int time = goStair0.poll() - 1;
 						if (time > 0) {
 							goStair0.add(time);
-						} else if (stair0.size() < 3) {
-							stair0.add(map[stairs.get(0).r][stairs.get(0).c]);
+						} else if (downStair0.size() < 3) {
+							downStair0.add(map[stairs.get(0).r][stairs.get(0).c]);
 						} else {
 							goStair0.add(time + 1);
 						}
@@ -101,14 +101,14 @@ class SWEA2383 {
 						int time = goStair1.poll() - 1;
 						if (time > 0) {
 							goStair1.add(time);
-						} else if (stair1.size() < 3) {
-							stair1.add(map[stairs.get(1).r][stairs.get(1).c]);
+						} else if (downStair1.size() < 3) {
+							downStair1.add(map[stairs.get(1).r][stairs.get(1).c]);
 						} else {
 							goStair1.add(time + 1);
 						}
 					}
 
-					if (stair0.isEmpty() && stair1.isEmpty() && goStair0.isEmpty() && goStair1.isEmpty()) {
+					if (goStair0.isEmpty() && goStair1.isEmpty() && downStair0.isEmpty() && downStair1.isEmpty()) {
 						break;
 					}
 				}
